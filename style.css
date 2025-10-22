@@ -1,0 +1,227 @@
+/* -------------------- RESET DE BASE -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------- STYLE GLOBAL -------------------- */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f4f6;
+    color: #333;
+    width: 100vw;
+}
+
+/* -------------------- VIDÉO DE FOND -------------------- */
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* -------------------- TEXTES GÉNÉRAUX -------------------- */
+h1 {
+    font-family: "Vina Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Vina Sans", sans-serif;
+    font-size: 35px;
+    -webkit-text-stroke: 1px black;
+    color: rgba(255, 255, 255, 0);
+}
+
+p {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* =========================================================
+   SECTION 1 — ACCUEIL / LOGO
+========================================================= */
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Arrière-plan dégradé rose/blanc */
+.color {
+    background: linear-gradient(140deg, #f8d6f8, #ffffff);
+}
+
+/* Style du logo principal */
+#logo {
+    font-weight: 800;
+    font-size: 200px;
+}
+
+/* =========================================================
+   SECTION 2 — GALERIE / CRÉATIONS
+========================================================= */
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Style des images dans la galerie */
+#gallery img {
+    width: 200px;
+    height: 400px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px;
+}
+
+/* Conteneur général de la section créations */
+#creations {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* Effet au survol des images */
+#gallery :hover {
+    transform: scale(1.05) rotate(1deg);
+}
+
+/* =========================================================
+   SECTION 3 — AVIS / RETOURS CLIENTS
+========================================================= */
+#avi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Carte individuelle d’un avis */
+.avis {
+    size: 10px;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 10px 10px 30px #f8d6f8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Animation au survol d’un avis */
+.avis:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur général des retours */
+#retours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* =========================================================
+   SECTION 4 — À PROPOS / RÉSEAUX SOCIAUX
+========================================================= */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Conteneur des logos de réseaux sociaux */
+.logoInsta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    width: 200px;
+    gap: 40px;
+}
+
+/* Logos individuels */
+#insta {
+    width: 100px;
+    border-radius: 30px;
+}
+
+#tiktok {
+    width: 100px;
+    border-radius: 100px;
+}
+
+#iara {
+    width: 100px;
+    border-radius: 30px;
+}
+
+/* Effet hover sur les logos */
+#insta:hover,
+#iara:hover,
+#tiktok:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================================
+   SECTION 5 — CONTACT
+========================================================= */
+#contact {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/* Élément draggable (déplaçable) */
+#draggable {
+    border-radius: 10px;
+    width: 10vh;
+    height: 10vw;
+    transition: 0.5s;
+}
+
+/* Formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    gap: 1rem;
+}
+
+/*
+input, textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+}
+*/
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #fff;
+    color: #e573a0;
+}
