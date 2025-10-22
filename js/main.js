@@ -4,15 +4,25 @@ gsap.registerPlugin(ScrollTrigger,Observer,ScrollToPlugin, Draggable,MotionPathP
 
 //all tweens run in direct succession
 let tl = gsap.timeline({
-    repeate : -1,
-    yoyo: true,
+    scrollTrigger:{
+        trigger: "#about", 
+        markers: true, 
+        start: "top 40%", 
+        end: "top 20%",
+        id: "logoInsta",
+        toggleActions:"play none reverse reset", 
+        scrub: 1,
+    }
 });
 
-tl.from("#insta", {x: 900,duration: 1,})
-  .from("#iara", {y: 900,duration: 1,})
-  .from("#tiktok", {y: -900,duration: 1,})
+tl.from("#insta", {x: 900,duration: 2,})
+  .from("#iara", {y: 900,duration: 2,})
+  .from("#tiktok", {y: -900,duration: 2,})
 
 
+  /** Que l'animation se lance au scroll de la section 4 */
+
+    
 
   /**Draggable section 5 */
   Draggable.create("#draggable", {
@@ -21,9 +31,6 @@ tl.from("#insta", {x: 900,duration: 1,})
     cursor: 'grab',
 
     onDrag: function(){
-        document.getElementById('draggable').style.width = '250px'
+        document.getElementById('draggable').style.width = '100px'
     }
-
-
-    
   })

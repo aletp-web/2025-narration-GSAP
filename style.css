@@ -153,7 +153,7 @@ p {
     justify-content: center;
     align-items: center;
     padding: 100px;
-    width: 200px;
+    width: 500px;
     gap: 40px;
 }
 
@@ -194,8 +194,8 @@ p {
 /* Élément draggable (déplaçable) */
 #draggable {
     border-radius: 10px;
-    width: 10vh;
-    height: 10vw;
+    width: 100px;
+    height: 100px;
     transition: 0.5s;
 }
 
