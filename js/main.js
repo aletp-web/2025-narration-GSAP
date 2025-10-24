@@ -159,7 +159,7 @@ gsap.from("#png",{ /** Que l'animation se lance au scroll de la section 1 */
   });
 
   tlPhoto.to(".photo",{
-    xPercent: -100,
+    xPercent: -20,
     duration: 6,
   });
   

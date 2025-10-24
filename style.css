@@ -248,6 +248,114 @@ footer {
    MEDIA QUERIES
 ========================================================= */
 
-@media (max-width:800px){
-    
+/* =========================================================
+   MEDIA QUERIES — TÉLÉPHONES (jusqu’à 799px)
+========================================================= */
+@media (max-width: 799px) {
+    /* Titres et paragraphes */
+    h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /* Section 1 — Accueil / Logo */
+    #section1 {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    #logo {
+        font-size: 120px;
+    }
+
+    #png {
+        width: 80px;
+        height: 100px;
+    }
+
+    /* Section 2 — Galerie / Créations */
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .photo {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    /* Section 3 — Avis */
+    #avi {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .avis {
+        width: 80%;
+        max-width: 200px;
+        padding: 1rem;
+    }
+
+    #retours {
+        gap: 5rem;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    /* Section 4 — À propos / Réseaux */
+    .logoInsta {
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #insta,
+    #tiktok,
+    #iara {
+        width: 70px;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Section 5 — Contact */
+    #contact {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    #formulaire {
+        width: 90%;
+        max-width: 350px;
+        padding: 1rem;
+    }
+
+    .form {
+        height: 35px;
+    }
+
+    #draggable {
+        width: 80px;
+        height: 120px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+        padding: 1rem;
+    }
+
+    #footerText {
+        font-size: 16px;
+    }
 }
