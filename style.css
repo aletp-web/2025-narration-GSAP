@@ -219,16 +219,6 @@ p {
     height: 40px;
 }
 
-
-
-/*
-input, textarea {
-    padding: 0.8rem;
-    border-radius: 10px;
-    border: none;
-}
-*/
-
 /* =========================================================
    FOOTER
 ========================================================= */
@@ -335,7 +325,7 @@ footer {
     }
 
     #formulaire {
-        width: 90%;
+        width: 50%;
         max-width: 350px;
         padding: 1rem;
     }
@@ -345,7 +335,7 @@ footer {
     }
 
     #draggable {
-        width: 80px;
+        width: 100px;
         height: 120px;
     }
 

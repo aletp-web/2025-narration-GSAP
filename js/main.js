@@ -159,7 +159,7 @@ gsap.from("#png",{ /** Que l'animation se lance au scroll de la section 1 */
   });
 
   tlPhoto.to(".photo",{
-    xPercent: -20,
+    xPercent: -50,
     duration: 6,
   });
   
@@ -176,3 +176,21 @@ gsap.from("#png",{ /** Que l'animation se lance au scroll de la section 1 */
       }
     });
   });
+
+ // Anim pour que le formulaire parte a droite au scroll - SECTION 5
+  gsap.from("#formulaire",{ /** Que l'animation se lance au scroll de la section 5 */
+    scrollTrigger:{
+        trigger: "#contact", 
+        //markers: true, 
+        start: "top 60%", 
+        end: "top 40%",
+        toggleActions:"play none reverse reset", 
+        scrub: 1,
+    },
+    rotation: -90,
+    duration: 2,
+    x: "100vw",
+    y: 0,
+
+
+})
