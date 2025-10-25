@@ -308,7 +308,7 @@ footer {
     .logoInsta {
         flex-direction: column;
         padding: 20px;
-        width: 100%;
+        width: 100vw;
         gap: 15px;
     }
 
@@ -316,7 +316,7 @@ footer {
     #tiktok,
     #iara {
         width: 70px;
-        border-radius: 30px;
+        border-radius: 20px;
     }
 
     #about {
@@ -327,13 +327,13 @@ footer {
     /* Section 5 — Contact */
     #contact {
         flex-direction: column;
-        padding: 2rem;
+        
     }
 
     #formulaire {
         width: 50%;
         max-width: 350px;
-        padding: 1rem;
+        padding: 1px;
     }
 
     .form {
@@ -342,13 +342,13 @@ footer {
 
     #draggable {
         width: 100px;
-        height: 120px;
+        
     }
 
     /* Footer */
     footer {
         font-size: 14px;
-        padding: 1rem;
+        padding: 1px;
     }
 
     #footerText {

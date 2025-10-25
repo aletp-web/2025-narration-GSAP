@@ -102,7 +102,7 @@ gsap.from("#png",{ /** Que l'animation se lance au scroll de la section 1 */
     cursor: 'grab',
 
     onDrag: function(){
-        document.getElementById('draggable').style.width = '100px'
+        document.getElementById('draggable')
     }
   })
 
@@ -113,7 +113,7 @@ gsap.from("#png",{ /** Que l'animation se lance au scroll de la section 1 */
     cursor: 'grab',
 
     onDrag: function(){
-        document.getElementById('png').style.width = '150px'
+        document.getElementById('png')
     }
   })
 
